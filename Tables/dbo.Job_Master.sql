@@ -7,3 +7,5 @@ CREATE TABLE [dbo].[Job_Master]
 GO
 ALTER TABLE [dbo].[Job_Master] ADD CONSTRAINT [PK_YourTableName] PRIMARY KEY CLUSTERED ([ID]) ON [PRIMARY]
 GO
+CREATE NONCLUSTERED INDEX [ix_jobname] ON [dbo].[Job_Master] ([Job_Name]) ON [PRIMARY]
+GO
